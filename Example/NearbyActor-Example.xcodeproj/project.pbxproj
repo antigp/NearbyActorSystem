@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44BACA342919A24300544C3B /* NearbyActor_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BACA332919A24300544C3B /* NearbyActor_ExampleApp.swift */; };
+		44BACA362919A24300544C3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BACA352919A24300544C3B /* ContentView.swift */; };
+		44BACA382919A24400544C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BACA372919A24400544C3B /* Assets.xcassets */; };
+		44BACA3B2919A24400544C3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BACA3A2919A24400544C3B /* Preview Assets.xcassets */; };
+		44DC537E2919A2AC00FF8106 /* DistributedActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC537D2919A2AC00FF8106 /* DistributedActor.swift */; };
+		44DC53812919A2CC00FF8106 /* NearbyActorSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 44DC53802919A2CC00FF8106 /* NearbyActorSystem */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44BACA412919A24400544C3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BACA282919A24300544C3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44BACA2F2919A24300544C3B;
+			remoteInfo = "NearbyActor-Example";
+		};
+		44BACA4B2919A24400544C3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BACA282919A24300544C3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44BACA2F2919A24300544C3B;
+			remoteInfo = "NearbyActor-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44BACA302919A24300544C3B /* NearbyActor-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NearbyActor-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BACA332919A24300544C3B /* NearbyActor_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyActor_ExampleApp.swift; sourceTree = "<group>"; };
+		44BACA352919A24300544C3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44BACA372919A24400544C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44BACA3A2919A24400544C3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44BACA402919A24400544C3B /* NearbyActor-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NearbyActor-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BACA4A2919A24400544C3B /* NearbyActor-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NearbyActor-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BACA5E2919A28500544C3B /* NearbyActorSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NearbyActorSystem; path = ..; sourceTree = "<group>"; };
+		44DC537D2919A2AC00FF8106 /* DistributedActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DistributedActor.swift; path = ../../../MultipeerActor/MultipeerActor/DistributedActor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44BACA2D2919A24300544C3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DC53812919A2CC00FF8106 /* NearbyActorSystem in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BACA3D2919A24400544C3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BACA472919A24400544C3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44BACA272919A24300544C3B = {
+			isa = PBXGroup;
+			children = (
+				44BACA5D2919A28500544C3B /* Packages */,
+				44BACA322919A24300544C3B /* NearbyActor-Example */,
+				44BACA312919A24300544C3B /* Products */,
+				44DC537F2919A2CC00FF8106 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44BACA312919A24300544C3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44BACA302919A24300544C3B /* NearbyActor-Example.app */,
+				44BACA402919A24400544C3B /* NearbyActor-ExampleTests.xctest */,
+				44BACA4A2919A24400544C3B /* NearbyActor-ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44BACA322919A24300544C3B /* NearbyActor-Example */ = {
+			isa = PBXGroup;
+			children = (
+				44DC537D2919A2AC00FF8106 /* DistributedActor.swift */,
+				44BACA332919A24300544C3B /* NearbyActor_ExampleApp.swift */,
+				44BACA352919A24300544C3B /* ContentView.swift */,
+				44BACA372919A24400544C3B /* Assets.xcassets */,
+				44BACA392919A24400544C3B /* Preview Content */,
+			);
+			path = "NearbyActor-Example";
+			sourceTree = "<group>";
+		};
+		44BACA392919A24400544C3B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				44BACA3A2919A24400544C3B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44BACA5D2919A28500544C3B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				44BACA5E2919A28500544C3B /* NearbyActorSystem */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		44DC537F2919A2CC00FF8106 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44BACA2F2919A24300544C3B /* NearbyActor-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BACA542919A24400544C3B /* Build configuration list for PBXNativeTarget "NearbyActor-Example" */;
+			buildPhases = (
+				44BACA2C2919A24300544C3B /* Sources */,
+				44BACA2D2919A24300544C3B /* Frameworks */,
+				44BACA2E2919A24300544C3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NearbyActor-Example";
+			packageProductDependencies = (
+				44DC53802919A2CC00FF8106 /* NearbyActorSystem */,
+			);
+			productName = "NearbyActor-Example";
+			productReference = 44BACA302919A24300544C3B /* NearbyActor-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44BACA3F2919A24400544C3B /* NearbyActor-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BACA572919A24400544C3B /* Build configuration list for PBXNativeTarget "NearbyActor-ExampleTests" */;
+			buildPhases = (
+				44BACA3C2919A24400544C3B /* Sources */,
+				44BACA3D2919A24400544C3B /* Frameworks */,
+				44BACA3E2919A24400544C3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44BACA422919A24400544C3B /* PBXTargetDependency */,
+			);
+			name = "NearbyActor-ExampleTests";
+			productName = "NearbyActor-ExampleTests";
+			productReference = 44BACA402919A24400544C3B /* NearbyActor-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44BACA492919A24400544C3B /* NearbyActor-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BACA5A2919A24400544C3B /* Build configuration list for PBXNativeTarget "NearbyActor-ExampleUITests" */;
+			buildPhases = (
+				44BACA462919A24400544C3B /* Sources */,
+				44BACA472919A24400544C3B /* Frameworks */,
+				44BACA482919A24400544C3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44BACA4C2919A24400544C3B /* PBXTargetDependency */,
+			);
+			name = "NearbyActor-ExampleUITests";
+			productName = "NearbyActor-ExampleUITests";
+			productReference = 44BACA4A2919A24400544C3B /* NearbyActor-ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44BACA282919A24300544C3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					44BACA2F2919A24300544C3B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					44BACA3F2919A24400544C3B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 44BACA2F2919A24300544C3B;
+					};
+					44BACA492919A24400544C3B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 44BACA2F2919A24300544C3B;
+					};
+				};
+			};
+			buildConfigurationList = 44BACA2B2919A24300544C3B /* Build configuration list for PBXProject "NearbyActor-Example" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44BACA272919A24300544C3B;
+			productRefGroup = 44BACA312919A24300544C3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44BACA2F2919A24300544C3B /* NearbyActor-Example */,
+				44BACA3F2919A24400544C3B /* NearbyActor-ExampleTests */,
+				44BACA492919A24400544C3B /* NearbyActor-ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44BACA2E2919A24300544C3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BACA3B2919A24400544C3B /* Preview Assets.xcassets in Resources */,
+				44BACA382919A24400544C3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BACA3E2919A24400544C3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BACA482919A24400544C3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44BACA2C2919A24300544C3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BACA362919A24300544C3B /* ContentView.swift in Sources */,
+				44DC537E2919A2AC00FF8106 /* DistributedActor.swift in Sources */,
+				44BACA342919A24300544C3B /* NearbyActor_ExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BACA3C2919A24400544C3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BACA462919A24400544C3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44BACA422919A24400544C3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44BACA2F2919A24300544C3B /* NearbyActor-Example */;
+			targetProxy = 44BACA412919A24400544C3B /* PBXContainerItemProxy */;
+		};
+		44BACA4C2919A24400544C3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44BACA2F2919A24300544C3B /* NearbyActor-Example */;
+			targetProxy = 44BACA4B2919A24400544C3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44BACA522919A24400544C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44BACA532919A24400544C3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44BACA552919A24400544C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NearbyActor-Example/Preview Content\"";
+				DEVELOPMENT_TEAM = J67Y29BQR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eantropov.NearbyActor-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44BACA562919A24400544C3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NearbyActor-Example/Preview Content\"";
+				DEVELOPMENT_TEAM = J67Y29BQR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eantropov.NearbyActor-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44BACA582919A24400544C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J67Y29BQR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eantropov.NearbyActor-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NearbyActor-Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NearbyActor-Example";
+			};
+			name = Debug;
+		};
+		44BACA592919A24400544C3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J67Y29BQR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eantropov.NearbyActor-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NearbyActor-Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NearbyActor-Example";
+			};
+			name = Release;
+		};
+		44BACA5B2919A24400544C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J67Y29BQR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eantropov.NearbyActor-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NearbyActor-Example";
+			};
+			name = Debug;
+		};
+		44BACA5C2919A24400544C3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J67Y29BQR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eantropov.NearbyActor-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NearbyActor-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44BACA2B2919A24300544C3B /* Build configuration list for PBXProject "NearbyActor-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BACA522919A24400544C3B /* Debug */,
+				44BACA532919A24400544C3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BACA542919A24400544C3B /* Build configuration list for PBXNativeTarget "NearbyActor-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BACA552919A24400544C3B /* Debug */,
+				44BACA562919A24400544C3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BACA572919A24400544C3B /* Build configuration list for PBXNativeTarget "NearbyActor-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BACA582919A24400544C3B /* Debug */,
+				44BACA592919A24400544C3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BACA5A2919A24400544C3B /* Build configuration list for PBXNativeTarget "NearbyActor-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BACA5B2919A24400544C3B /* Debug */,
+				44BACA5C2919A24400544C3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44DC53802919A2CC00FF8106 /* NearbyActorSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NearbyActorSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 44BACA282919A24300544C3B /* Project object */;
+}
